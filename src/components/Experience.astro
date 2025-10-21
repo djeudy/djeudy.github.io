@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "January 2023 - Present",
+    title: "CTO - Chief Technical Officer",
+    company: "Traduka",
+    description:
+      "Leading technical strategy and development teams. Overseeing architecture decisions, technology stack selection, and implementation of best practices across all development projects.",
+  },
+  {
+    date: "May 2024 - November 2024",
+    title: "Software Engineer",
+    company: "Axxium Vision",
+    description:
+      "Part-time software engineer role focused on web application development. Worked with PHP and modern web technologies in a remote capacity from Canada.",
+  },
+  {
+    date: "October 2022 - November 2023",
+    title: "Software Engineer",
+    company: "EVOLUCARE",
+    description:
+      "Full-time software engineering position in a hybrid work environment. Contributed to development and maintenance of healthcare software solutions.",
+  },
+  {
+    date: "August 2022 - October 2022",
+    title: "Junior Data Engineer",
+    company: "Analytics Intell",
+    description:
+      "Internship focused on data engineering. Worked with SQL Server, SSIS, Azure Data Factory, data modeling, data warehousing, MicroStrategy, and Tableau.",
+  },
+  {
+    date: "March 2022 - October 2022",
+    title: "Software Developer",
+    company: "Code9Class",
+    description:
+      "Part-time software development role focusing on web application development and programming education support.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
